@@ -117,7 +117,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-<!-- 			<version>1.1.46</version> -->
+			<!-- <version>1.1.46</version> -->
 			<version>1.2.3</version>
 		</dependency>
 
@@ -826,7 +826,13 @@
 				<artifactId>mysql-connector-java</artifactId>
 				<version>5.1.25</version>
 			</dependency>
-
+			
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>9.2-1004-jdbc4</version>
+			</dependency>
+			
 			<!-- mybatis 3 -->
 
 			<dependency>
@@ -1195,6 +1201,16 @@
 			<dependency>
 				<groupId>org.jboss.marshalling</groupId>
 				<artifactId>jboss-marshalling</artifactId>
+				<version>${marshalling}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.marshalling</groupId>
+				<artifactId>jboss-marshalling-river</artifactId>
+				<version>${marshalling}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.marshalling</groupId>
+				<artifactId>jboss-marshalling-serial</artifactId>
 				<version>${marshalling}</version>
 			</dependency>
 		</dependencies>
