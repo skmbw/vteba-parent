@@ -387,6 +387,11 @@
 		</dependency>
 		<!-- hibernate end -->
 		
+		<dependency>
+			<groupId>com.vteba</groupId>
+			<artifactId>mybatis-simple</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
