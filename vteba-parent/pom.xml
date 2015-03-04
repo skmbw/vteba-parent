@@ -33,19 +33,33 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.5</version>
+			<version>1.7.10</version>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.slf4j</groupId> -->
+<!-- 			<artifactId>slf4j-log4j12</artifactId> -->
+<!-- 			<version>1.7.5</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>log4j</groupId> -->
+<!-- 			<artifactId>log4j</artifactId> -->
+<!-- 			<version>1.2.17</version> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.2</version>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.5</version>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.2</version>
 		</dependency>
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.2</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
@@ -396,6 +410,12 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+			    <groupId>org.apache.logging.log4j</groupId>
+			    <artifactId>log4j-web</artifactId>
+			    <version>2.2</version>
+			    <scope>runtime</scope>
+			</dependency>
 			<dependency>
 				<groupId>com.google.oauth-client</groupId>
 				<artifactId>google-oauth-client</artifactId>
@@ -1089,16 +1109,16 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-			<!-- <dependency> -->
-			<!-- <groupId>org.jboss</groupId> -->
-			<!-- <artifactId>staxmapper</artifactId> -->
-			<!-- <version>1.1.0.Final</version> -->
-			<!-- </dependency> -->
-			<!-- <dependency> -->
-			<!-- <groupId>org.infinispan</groupId> -->
-			<!-- <artifactId>infinispan-spring</artifactId> -->
-			<!-- <version>${infinispan-version}</version> -->
-			<!-- </dependency> -->
+			<dependency>
+				<groupId>org.jboss</groupId>
+				<artifactId>staxmapper</artifactId>
+				<version>1.1.0.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.infinispan</groupId>
+				<artifactId>infinispan-spring</artifactId>
+				<version>${infinispan-version}</version>
+			</dependency>
 			<!-- <dependency> -->
 			<!-- <groupId>org.infinispan</groupId> -->
 			<!-- <artifactId>infinispan-cdi</artifactId> -->
@@ -1132,11 +1152,11 @@
 			<!-- <version>${infinispan-version}</version> -->
 			<!-- </dependency> -->
 
-			<!-- <dependency> -->
-			<!-- <groupId>org.hibernate</groupId> -->
-			<!-- <artifactId>hibernate-infinispan</artifactId> -->
-			<!-- <version>${hibernate-version}</version> -->
-			<!-- </dependency> -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-infinispan</artifactId>
+				<version>${hibernate-version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.jgroups</groupId>
