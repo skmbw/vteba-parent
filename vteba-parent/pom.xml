@@ -21,7 +21,7 @@
 		<asm-version>4.1</asm-version>
 		<hornetq-version>2.2.21.Final</hornetq-version>
 		<jackson-version>2.2.3</jackson-version>
-		<resteasy-version>3.0.8.Final</resteasy-version>
+		<resteasy-version>3.0.11.Final</resteasy-version>
 		<httpcomp-version>4.3.2</httpcomp-version>
 		<netty4>4.0.24.Final</netty4>
 		<netty3>3.9.3.Final</netty3>
